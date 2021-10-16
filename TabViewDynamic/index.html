@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+    <title>Dynamic Tabs</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <script src="data.js"></script>
+</head>
+
+<body>
+
+
+    <div class="tab" id="tab">
+        <!-- Content Loaded Dynamically -->
+    </div>
+
+    <div class="content" id="content">
+        <!-- Content Must be hidden -->
+    </div>
+
+    <div class="darkmode" onclick=DarkMode()>
+        Light Mode
+        <i id="dark" class="fa fa-toggle-off "></i>
+        Dark Mode
+    </div>
+
+    <script>
+
+        // local storing obj Object. Check browser support for local storage
+        if (typeof (Storage) !== "undefined") {
+            // Store in local storage
+            localStorage.setItem("data", JSON.stringify(obj));
+        }
+
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

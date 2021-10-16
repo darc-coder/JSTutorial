@@ -1,0 +1,2 @@
+The Data.js File Contains Object Named 'obj' Containing The data needed to build the tabs.
+The Object 'obj' is referenced in index.html and then stored in localstorage. which is then referenced by script.js to build the actual Tabs and Divs.
