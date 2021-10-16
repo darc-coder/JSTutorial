@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: medium;
+    animation-duration: 2s;
+}
+
+body{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: rgb(31, 31, 31);
+    transition: all 0.5s;
+}
+
+.darkmode{
+    display: inline-flex;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    top: 2px;
+    right: 2px;
+    padding: 20px 0px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.darkmode i{
+    margin: 1px;
+    animation: fade;
+    animation-duration: 1s;
+} 
+@keyframes fade{
+    from { opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+.darkmode i.fa-toggle-on{
+    margin: 1px;
+    animation: opacity;
+    animation-duration: 1s;
+}
+@keyframes opacity{
+    from { opacity: 0%;}
+    to {opacity: 100%;}
+}
+.container{
+    display: flex;
+    max-width: 500px;
+    max-height: 300px;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
